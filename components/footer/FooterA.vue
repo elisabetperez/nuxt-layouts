@@ -11,22 +11,5 @@
   </footer>
 </template>
 <script setup>
-import { ref, onMounted } from "vue";
-import { footerQuery } from "./../js/queries/settings.js";
-import { GET_SETTINGS } from "./../js/services/GET.js";
 
-const getCurrentYear = () => new Date().getFullYear();
-const currentYear = ref(getCurrentYear());
-const updateCurrentYear = () => {
-  currentYear.value = getCurrentYear();
-};
-
-const footerInfo = await GET_SETTINGS({
-  QUERY: footerQuery,
-  TYPE: "footer",
-});
-
-onMounted(() => {
-  updateCurrentYear();
-});
 </script>

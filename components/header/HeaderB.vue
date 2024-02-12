@@ -21,11 +21,5 @@
 </template>
 
 <script setup>
-import { headerQuery } from "./../js/queries/settings.js";
-import { GET_SETTINGS } from "./../js/services/GET.js";
 
-const headerInfo = await GET_SETTINGS({
-  QUERY: headerQuery,
-  TYPE: "header",
-});
 </script>

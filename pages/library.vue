@@ -34,7 +34,6 @@
         </div>
 </template>
 <script setup>
-const props = defineProps(["contentPage"]);
 definePageMeta({
   middleware: ["authenticated"],
   layout: "sidenav",

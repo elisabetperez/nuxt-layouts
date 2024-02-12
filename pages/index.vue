@@ -35,9 +35,6 @@
 </template>
 <script setup>
 
-onMounted(async () => {
-    useBlazy()
-})
 
 definePageMeta({
     middleware: ["authenticated"],
