@@ -40,14 +40,4 @@ definePageMeta({
   layout: "sidenav",
 });
 
-import { GET_SANITY_CONTENT } from "./../js/services/GET.js";
-import { libraryQuery } from "./../js/queries/query";
-
-const route = useRoute();
-
-const contentPage = await GET_SANITY_CONTENT({
-  QUERY: libraryQuery,
-  TYPE: "page",
-  SLUG: "library",
-});
 </script>

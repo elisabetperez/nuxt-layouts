@@ -34,14 +34,6 @@
         </div>
 </template>
 <script setup>
-import { GET_SANITY_CONTENT } from "./../js/services/GET.js"
-import { queries } from "./../js/queries/query"
-const route = useRoute()
-const contentPage = await GET_SANITY_CONTENT({
-    QUERY:  queries({route: route.params.slug}),
-    TYPE: "page",
-    SLUG: "/",
-})
 
 onMounted(async () => {
     useBlazy()
