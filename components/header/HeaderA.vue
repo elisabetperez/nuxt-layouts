@@ -5,9 +5,7 @@
         <div class="f--col-12">
           <div class="c--header-a__wrapper">
             <div class="c--header-a__wrapper__item-left">
-              <NuxtLink to="/" class="c--brand-a" aria-label="global components homepage">
-                <TImage className="c--brand-a__media" :image="headerInfo.logo_nav.url" :width="headerInfo.logo_nav.width" :height="headerInfo.logo_nav.height" showAspectRatio="true" />
-              </NuxtLink>
+              
             </div>
             <div class="c--header-a__wrapper__item-right">
               <NuxtLink

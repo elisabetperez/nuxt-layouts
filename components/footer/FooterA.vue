@@ -1,9 +1,5 @@
 <template>
   <footer class="c--footer-a">
-    <div class="c--footer-a__bd">
-      <TImage className="c--footer-a__bd__media g--lazy-01" :image="footerInfo.footer_logo.url" :width="footerInfo.footer_logo.width" :height="footerInfo.footer_logo.height" showAspectRatio="true" :placeholder="useGetPlaceholderImage()" :isLazy="true" />
-    </div>
-
     <div class="c--footer-a__ft">
       <div class="f--container">
         <div class="f--row">
