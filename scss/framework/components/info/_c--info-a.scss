@@ -1,0 +1,19 @@
+.c--info-a {
+    @extend .f--font-f;
+    @extend .f--color-a;
+    position: relative;
+    padding-left: calc(#{$measure * 4} + #{$measure * 1.5});
+
+    &::before {
+        content: "";
+        background: map-get($color-options, h);
+        border-radius: 90px;
+        display: inline-block;
+        position: absolute;
+        top: calc(50% - 1px);
+        left: 0;
+        transform: translateY(-50%);
+        height: 3px;
+        width: $measure * 4;
+    }
+}

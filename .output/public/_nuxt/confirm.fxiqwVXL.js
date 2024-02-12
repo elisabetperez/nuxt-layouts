@@ -1,0 +1,1 @@
+import{_ as o}from"./_plugin-vue_export-helper.x3n3nnut.js";import{c as n,o as c,F as r,a as e}from"./entry.OtO-Wuic.js";const t={},s=e("p",null,"confirm",-1),a=e("p",null,"espereando que confirme el email",-1);function _(l,m){return c(),n(r,null,[s,a],64)}const p=o(t,[["render",_]]);export{p as default};

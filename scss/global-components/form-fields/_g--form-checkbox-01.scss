@@ -1,0 +1,40 @@
+.g--form-checkbox-01 {
+    @include make-form-checkbox-01();
+    @include make-form-checkbox-01-modifier(
+        $artwork-options: (
+            "background-image": url("/assets/img/checkbox.webp"),
+            "background-position": center,
+            "background-repeat": no-repeat,
+            "background-size": contain,
+            "height": 8px,
+            "width": 13px,
+        ),
+        $error-options: (
+            "border-color": map-get($color-options, h),
+            "color": map-get($color-options, h),
+        ),
+        $font-options: (
+            "className": f--font-e,
+            "color": map-get($color-options, b),
+        ),
+        $square-options: (
+            "border-style": solid,
+            "border-width": 2px,
+            "border-color": map-get($color-options, b),
+            "border-radius": 4px,
+            "height": 25px,
+            "width": 24px,
+        )
+    );
+
+    &--second {
+        @include make-form-checkbox-01-modifier(
+            $font-options: (
+                "color": map-get($color-options, a),
+            ),
+            $square-options: (
+                "border-color": map-get($color-options, a),
+            )
+        );
+    }
+}

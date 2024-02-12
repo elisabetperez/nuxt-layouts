@@ -1,0 +1,58 @@
+.c--nav-a {
+    @extend .f--background-a;
+    display: flex;
+    flex-direction: column;
+    padding: $measure * 5 $measure * 4 $measure * 5 $measure * 5;
+    max-height: 100vh;
+    height: 100%;
+    max-width: 320px;
+    width: 320px;
+
+    &__title {
+        @extend .f--font-d;
+        @extend .f--color-b;
+        font-weight: 700;
+        margin-bottom: $measure * 4;
+        &.router-link-exact-active {
+            text-decoration: underline;
+        }
+    }
+
+    &__wrapper {
+        overflow-y: auto;
+        padding-right: $measure * 4;
+        height: 100%;
+        max-height: calc(100% - 33px - #{$measure * 4} - 92px - #{$measure * 6});
+        scrollbar-width: thin;
+        scrollbar-color: map-get($color-options, g) rgba(map-get($color-options, b), 10%);
+
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: rgba(map-get($color-options, b), 10%);
+            border-radius: 90px;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: map-get($color-options, g);
+            border-radius: 90px;
+        }
+    }
+
+    &__ft {
+        border-top: 1px solid map-get($color-options, b);
+        margin-top: auto;
+        padding-top: $measure * 3;
+
+        &__title {
+            @extend .f--font-d;
+            @extend .f--color-b;
+            font-weight: 700;
+            margin-bottom: $measure;
+        }
+    }
+}

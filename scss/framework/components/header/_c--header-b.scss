@@ -1,0 +1,35 @@
+.c--header-b {
+    @extend .f--background-a;
+    padding: $measure * 2 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__item-left {
+            position: relative;
+            z-index: 1;
+        }
+
+        &__item-right {
+            display: flex;
+            align-items: center;
+            gap: $measure * 4;
+
+            &__content {
+                @extend .f--font-e;
+                @extend .f--color-b;
+                font-weight: 700;
+            }
+
+            &__item {
+            }
+        }
+    }
+}

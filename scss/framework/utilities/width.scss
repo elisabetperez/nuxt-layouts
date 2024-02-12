@@ -1,0 +1,27 @@
+$width-properties: (
+    50: 50%,
+    75: 75%,
+    100: 100%,
+);
+
+@mixin width($width-properties, $breakpoints) {
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+        @if ($breakpoint-value == 0) {
+            @each $name, $property in $width-properties {
+                .u--width-#{$name} {
+                    width: $property;
+                }
+            }
+        } @else {
+            @media screen and ($viewport-type: $breakpoint-value) {
+                @each $name, $property in $width-properties {
+                    .u--align-items-#{$breakpoint-name}-#{$name} {
+                        width: $property;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include width($width-properties, $breakpoints-grid);

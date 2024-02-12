@@ -1,0 +1,22 @@
+.c--layout-d {
+    @extend .f--background-a;
+    display: flex;
+    position: relative;
+
+    @media all and ($viewport-type: $tabletm) {
+        display: none;
+    }
+
+    &__left-item {
+        position: sticky;
+        top: $headerDesktop;
+        height: calc(100vh - #{$headerDesktop} + 1px);
+        min-width: 320px;
+        width: 20%;
+        z-index: 5;
+    }
+
+    &__right-item {
+        width: 80%;
+    }
+}

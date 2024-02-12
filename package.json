@@ -1,0 +1,41 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/supabase": "^1.1.3",
+    "nuxt": "^3.8.1",
+    "vue": "^3.3.8",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@andresclua/infinite-marquee-gsap": "^0.0.8",
+    "@andresclua/jsutil": "^3.0.16",
+    "@lottiefiles/lottie-interactivity": "^1.6.2",
+    "@lottiefiles/lottie-player": "^2.0.2",
+    "@nuxtjs/sanity": "^1.8.3",
+    "@teamthunderfoot/modal": "^0.0.2",
+    "@teamthunderfoot/wysiwyg-content-sanity": "^0.0.7",
+    "@terra-hq/gc": "file:terra-hq-gc-0.0.3.tgz",
+    "@terra-hq/wysiwyg": "file:terra-hq-wysiwyg-0.0.1.tgz",
+    "@terrahq/collapsify": "^0.0.18",
+    "@terrahq/timage": "^0.0.6",
+    "@terrahq/vue-form": "^0.0.17",
+    "blazy": "^1.8.2",
+    "gsap": "file:gsap-bonus.tgz",
+    "i": "^0.3.7",
+    "npm": "^10.2.5",
+    "sass": "^1.69.5",
+    "tiny-slider": "^2.9.4",
+    "vue-lazyload": "^3.0.0",
+    "vue3-lottie": "^3.2.0"
+  }
+}

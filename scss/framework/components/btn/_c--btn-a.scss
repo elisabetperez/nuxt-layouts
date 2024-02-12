@@ -1,0 +1,12 @@
+.c--btn-a{
+    background-color: map-get($color-options, f );
+    padding:$measure $measure* 3;
+    text-decoration: none;
+    color: map-get($color-options, b );
+    border-radius: 5px;
+    &--second{
+        background-color: map-get($color-options, g );
+        // width: 100%;
+        display: block;
+    }
+}

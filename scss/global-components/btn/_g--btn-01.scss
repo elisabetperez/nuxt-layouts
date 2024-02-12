@@ -1,0 +1,173 @@
+.g--btn-01 {
+    @include make-btn-01();
+    @include make-btn-01-modifier(
+        $background-options: (
+            "background-color": map-get($color-options, b),
+        ),
+        $border-options: (
+            "border-style": solid,
+            "border-width": 3px,
+            "border-color": map-get($color-options, b),
+            "border-radius": 30px,
+        ),
+        $hover-options: (
+            "border-radius": 8px,
+        ),
+        $font-options: (
+            "className": (
+                f--font-e,
+                f--color-a,
+            ),
+            "font-weight": 700,
+        ),
+        // $custom-options: ()
+    );
+
+    &--second {
+        @include make-btn-01-modifier(
+            $background-options: (
+                "background-color": map-get($color-options, a),
+            ),
+            $border-options: (
+                "border-color": map-get($color-options, b),
+            ),
+            $font-options: (
+                "className": (
+                    f--font-e,
+                    f--color-b,
+                ),
+                "font-weight": 700,
+            )
+        );
+    }
+
+    &--third {
+        @include make-btn-01-modifier(
+            $background-options: (
+                "background-color": map-get($color-options, a),
+            ),
+            $border-options: (
+                "border-width": 3px,
+                "border-radius": 90px,
+            ),
+            $font-options: (
+                "className": (
+                    f--font-e,
+                    f--color-b,
+                ),
+                "font-weight": 700,
+            ),
+            $hover-options: (
+                "border-radius": 90px,
+                "background-color": map-get($color-options, b),
+                "color": map-get($color-options, a),
+            )
+        );
+    }
+
+    &--fourth {
+        @include make-btn-01-modifier(
+            $background-options: (
+                "background-color": map-get($color-options, l),
+            ),
+            $border-options: (
+                "border-width": 0px,
+                "border-color": map-get($color-options, a),
+            ),
+            $font-options: (
+                "className": (
+                    f--font-e,
+                    f--color-j,
+                ),
+                "font-weight": 700,
+            ),
+            $hover-options: (
+                "border-radius": 10px,
+                "background-color": map-get($color-options, b),
+                "color": map-get($color-options, a),
+                "box-shadow": none,
+            )
+        );
+    }
+
+    &--fifth {
+        @include make-btn-01-modifier(
+            $background-options: (
+                "background-color": map-get($color-options, l),
+            ),
+            $border-options: (
+                "border-width": 4px,
+                "border-style": solid,
+                "border-color": map-get($color-options, a),
+                "border-radius": 10px,
+            ),
+            $shadow-options: (
+                "box-shadow": 4px 3px 0px 0px map-get($color-options, a),
+            ),
+            $font-options: (
+                "className": (
+                    f--font-e,
+                    f--color-a,
+                ),
+                "font-weight": 700,
+            ),
+            $hover-options: (
+                "border-radius": 10px,
+                "background-color": map-get($color-options, b),
+                "color": map-get($color-options, a),
+                "box-shadow": none,
+            )
+        );
+    }
+
+    &--example-1 {
+        @include make-btn-01-modifier(
+            $background-options: (
+                "background-color": map-get($color-options, i),
+            ),
+            $border-options: (
+                "border-color": transparent,
+                "border-width": 1px,
+                "border-style": solid,
+                "border-radius": 0,
+            ),
+            $hover-options: (
+                "background-color": transparent,
+                "border-color": map-get($color-options, i),
+                "border-radius": $measure * 4,
+                "color": map-get($color-options, i),
+            ),
+            $font-options: (
+                "className": (
+                    f--font-d,
+                    f--color-b,
+                ),
+                "font-weight": 300,
+            )
+        );
+    }
+
+    &--example-2 {
+        @include make-btn-01-modifier(
+            $background-options: (
+                "background-color": transparent,
+            ),
+            $border-options: (
+                "border-color": #241c15,
+                "border-width": 1px,
+                "border-style": solid,
+                "border-radius": $measure * 4,
+            ),
+            $hover-options: (
+                "border-radius": $measure * 4,
+                "transform": translateY(-0.375em),
+                "box-shadow": 0px 5px 0px 0px rgb(36, 28, 21),
+            ),
+            $font-options: (
+                "font-weight": 500,
+                "color": #241c15,
+                "font-size": 1.5rem,
+            )
+        );
+    }
+}

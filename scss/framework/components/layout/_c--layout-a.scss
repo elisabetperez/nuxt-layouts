@@ -1,0 +1,86 @@
+.c--layout-a {
+    position: relative;
+    width: 100%;
+
+    &__media-wrapper {
+        position: relative;
+        // overflow: hidden;
+        max-height: 580px;
+        height: 100%;
+        width: 100%;
+
+        &__media {
+            display: block;
+            object-fit: contain;
+            object-position: center;
+            max-height: 580px !important;
+            height: 100%;
+            width: 100%;
+        }
+
+        &__media {
+            display: block;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: $measure * 7 0;
+        width: 100%;
+
+        @media all and ($viewport-type: $tablets) {
+            padding: 0 0 $measure * 7;
+        }
+
+        &__title {
+            @extend .f--font-b;
+            @extend .f--color-a;
+            font-weight: 700;
+            margin-bottom: $measure * 4;
+        }
+
+        &__subtitle {
+            @extend .f--font-e;
+            @extend .f--color-a;
+            margin-bottom: $measure * 4;
+        }
+
+        &__ft {
+            &__btn {
+                @extend .g--btn-01;
+                @extend .g--btn-01--second;
+                @extend .f--font-e;
+                font-weight: 700;
+                margin-left: 0;
+                margin-right: auto;
+                width: fit-content;
+
+                @media all and ($viewport-type: $mobile) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &--second & {
+        &__wrapper {
+            @media all and ($viewport-type: $tablets) {
+                padding: $measure * 7 0 0;
+            }
+        }
+    }
+
+    .lottie-animation-container {
+        max-height: 580px !important;
+        height: 100% !important;
+        width: 500px !important;
+
+        @media all and ($viewport-type: $tabletm) {
+            width: 100% !important;
+        }
+    }
+}

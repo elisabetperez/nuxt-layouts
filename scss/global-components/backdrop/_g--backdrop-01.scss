@@ -1,0 +1,16 @@
+.g--backdrop-01 {
+    background: rgba(map-get($color-options, a), 10%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100vh;
+    transition: all $time-b $ease-standard-a;
+    visibility: visible;
+    width: 100%;
+    z-index: 100;
+
+    &--is-active {
+        opacity: 1;
+    }
+}

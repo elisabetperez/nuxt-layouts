@@ -1,0 +1,29 @@
+.c--layout-c {
+    @extend .f--background-c;
+    padding: $measure * 10 $measure * 7;
+    width: 100%;
+
+    &__title {
+        @extend .f--font-c;
+        @extend .f--color-a;
+        font-weight: 700;
+        margin-bottom: $measure * 4;
+
+        @media all and ($viewport-type: $tablets) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__media-wrapper {
+        max-width: 275px;
+        width: 100%;
+
+        &__media {
+            @extend .f--ar;
+
+            @media all and ($viewport-type: $tablets) {
+                display: none;
+            }
+        }
+    }
+}

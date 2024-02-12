@@ -1,0 +1,39 @@
+.c--slider-a {
+    position: relative;
+    padding-bottom: $measure * 7;
+
+    .tns-ovh {
+        overflow: hidden;
+    }
+
+    .tns-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: $measure * 4;
+        margin-top: $measure * 4;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+    }
+
+    .tns-outer [aria-controls],
+    .tns-outer [data-action] {
+        border-radius: 100%;
+        border: 2px solid map-get($color-options, g);
+        height: $measure * 3;
+        width: $measure * 3;
+    }
+
+    .tns-nav-active {
+        background: map-get($color-options, g);
+    }
+
+    &__wrapper {
+        display: flex;
+
+        &__item {
+            display: flex !important;
+        }
+    }
+}

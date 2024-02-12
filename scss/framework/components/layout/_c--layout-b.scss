@@ -1,0 +1,151 @@
+.c--layout-b {
+    position: relative;
+    width: 100%;
+
+    &__bg-items {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: map-get($color-options, f);
+            border-radius: 100%;
+            position: absolute;
+            top: 35%;
+            left: 3%;
+            height: 93px;
+            width: 93px;
+
+            @media all and ($viewport-type: $tablets) {
+                top: 25%;
+                left: -5%;
+            }
+
+            &:nth-child(2) {
+                background: map-get($color-options, g);
+                top: 68%;
+                left: 39%;
+
+                @media all and ($viewport-type: $tablets) {
+                    top: 75%;
+                    left: 0%;
+                }
+            }
+
+            &:nth-child(3) {
+                background: map-get($color-options, h);
+                top: 16%;
+                left: 83%;
+
+                @media all and ($viewport-type: $tabletm) {
+                    top: 16%;
+                    left: 88%;
+                }
+
+                @media all and ($viewport-type: $tablets) {
+                    top: 60%;
+                    left: 79%;
+                }
+            }
+
+            &:nth-child(4) {
+                background: map-get($color-options, e);
+                top: 65%;
+                left: 88%;
+
+                @media all and ($viewport-type: $tablets) {
+                    top: 85%;
+                    left: 75%;
+                }
+            }
+        }
+    }
+
+    &__ft-items {
+        &__right-items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0;
+            margin-left: auto;
+
+            @media all and ($viewport-type: $tablets) {
+                margin: 0 auto;
+            }
+
+            &__wrapper {
+                margin-bottom: $measure * 3;
+                position: relative;
+                // overflow: hidden;
+                // max-height: 345px;
+                height: 100%;
+                // width: 100%;
+
+                &__item {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            &__content {
+                @extend .f--font-f;
+                @extend .f--color-a;
+                font-weight: 700;
+                margin-bottom: $measure * 2;
+            }
+
+            &__list-group {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                column-gap: $measure * 3;
+                row-gap: $measure * 2;
+                margin-top: auto;
+                max-width: 288px;
+
+                &__list-item {
+                    @extend .g--btn-03;
+
+                    @media all and ($viewport-type: $mobile) {
+                        width: fit-content !important;
+                    }
+                }
+
+                span {
+                    max-width: none !important;
+                    width: 100%;
+                }
+            }
+        }
+
+        &__left-items {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: $measure * 7 0;
+            width: 100%;
+
+            @media all and ($viewport-type: $tablets) {
+                padding: 0 0 $measure * 7;
+            }
+
+            &__title {
+                @extend .f--font-b;
+                @extend .f--color-a;
+                font-weight: 700;
+                margin-bottom: $measure * 4;
+            }
+
+            &__subtitle {
+                @extend .f--font-e;
+                @extend .f--color-a;
+            }
+        }
+    }
+}

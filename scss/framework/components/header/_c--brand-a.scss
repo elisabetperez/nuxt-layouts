@@ -1,0 +1,14 @@
+.c--brand-a {
+    text-decoration: none;
+    display: block;
+
+    &__media {
+        display: block;
+        height: 36px;
+        width: auto;
+
+        @media all and ($viewport-type: $tablets) {
+            height: 28px;
+        }
+    }
+}

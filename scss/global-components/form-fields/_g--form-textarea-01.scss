@@ -1,0 +1,46 @@
+.g--form-textarea-01 {
+    @include make-form-textarea-01();
+    @include make-form-textarea-01-modifier(
+        $background-options: (
+            "background-color": transparent,
+        ),
+        $background-autofill-options: (
+            "background-color": transparent,
+        ),
+        $border-options: (
+            "border-color": map-get($color-options, b),
+            "border-style": solid,
+            "border-width": 2px,
+            "border-radius": 20px,
+        ),
+        $error-options: (
+            "color": map-get($color-options, h),
+            "border-color": map-get($color-options, h),
+        ),
+        $font-options: (
+            "className": f--font-e,
+            "color": map-get($color-options, b),
+        ),
+        $placeholder-options: (
+            "color": rgba(map-get($color-options, b), 40%),
+        ),
+        $height-options: (
+            "height": 137px,
+            "max-height": 500px,
+        )
+    );
+
+    &--second {
+        @include make-form-textarea-01-modifier(
+            $border-options: (
+                "border-color": map-get($color-options, a),
+            ),
+            $font-options: (
+                "color": map-get($color-options, a),
+            ),
+            $placeholder-options: (
+                "color": rgba(map-get($color-options, a), 40%),
+            )
+        );
+    }
+}

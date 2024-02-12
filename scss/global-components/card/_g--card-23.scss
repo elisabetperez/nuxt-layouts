@@ -1,0 +1,442 @@
+.g--card-23 {
+    @include make-card-23();
+    @include make-card-23-modifier(
+        $background-options: (
+            "background-color": map-get($color-options, n),
+        ),
+        $border-options: (
+            "border-radius": 0 90px 0 0,
+        ),
+        $shadow-options: (
+            // box-shadow: 0px 13px 29px 1px rgba(0, 0, 0, 0.25),
+        ),
+        $media-options: (
+            "aspect-ratio": 3 2,
+            // "min-height": 100px,
+            "object-position": top,
+            "background-color": map-get($color-options, n),
+            "first": yes,
+        ),
+        $item-primary-options: (
+            "className": f--font-g,
+            "color": map-get($color-options, k),
+        ),
+        $item-secondary-options: (
+            "className": f--font-j,
+            "color": map-get($color-options, c),
+        ),
+        $list-group-item-options: (
+            "className": g--btn-03 g--btn-03--second,
+            "color": map-get($color-options, n),
+            "font-weight": 400,
+        )
+    );
+
+    &--second {
+        @include make-card-23-modifier(
+            $background-options: (
+                "background-color": map-get($color-options, k),
+            ),
+            $border-options: (
+                "border-radius": $measure * 3,
+            ),
+            $media-options: (
+                "aspect-ratio": 3 2,
+                "background-color": map-get($color-options, k),
+                "min-height": 100px,
+                "object-position": top,
+                "first": yes,
+            ),
+            $item-primary-options: (
+                "className": f--font-i,
+                "color": map-get($color-options, a),
+            ),
+            $item-secondary-options: (
+                "className": f--font-j,
+                "color": map-get($color-options, a),
+            ),
+            $list-group-item-options: (
+                "className": g--btn-02,
+                "color": map-get($color-options, a),
+                "font-weight": 400,
+            ),
+            $custom-options: (
+                ".g--card-23__wrapper__list-group__item": (
+                    text-decoration: underline,
+                    padding: 0,
+                ),
+                ".g--card-23__wrapper__list-group__item svg": (
+                    width: $measure,
+                ),
+            )
+        );
+    }
+
+    &--third {
+        @include make-card-23-modifier(
+            $card-options: (
+                "align": center,
+            ),
+            $background-options: (
+                "background-color": map-get($color-options, a),
+            ),
+            $border-options: (
+                "border-radius": $measure * 5,
+            ),
+            $media-options: (
+                "aspect-ratio": 3 2,
+                "background-color": map-get($color-options, a),
+                "min-height": 100px,
+                "object-position": top,
+                "first": yes,
+            ),
+            $item-primary-options: (
+                "className": f--font-h,
+                "color": map-get($color-options, b),
+            ),
+            $item-secondary-options: (
+                "className": f--font-j,
+                "color": map-get($color-options, b),
+            ),
+            $list-group-item-options: (
+                "className": g--btn-01,
+                "color": map-get($color-options, a),
+                "font-weight": 400,
+            ),
+            $custom-options: (
+                ".g--card-23__wrapper__list-group__item": (
+                    border-width: 0,
+                ),
+            )
+        );
+    }
+
+    &--fourth {
+        @include make-card-23-modifier(
+            $card-options: (
+                // "align": center,
+            ),
+            $background-options: (
+                "background-color": map-get($color-options, c),
+            ),
+            $border-options: (
+                "border-radius": $measure * 5,
+            ),
+            $media-options: (
+                "aspect-ratio": 3 2,
+                "background-color": map-get($color-options, c),
+                "min-height": 100px,
+                "object-position": top,
+                "first": yes,
+            ),
+            $item-primary-options: (
+                "className": f--font-j,
+                "color": map-get($color-options, a),
+            ),
+            $item-secondary-options: (
+                "font-family": "Sora",
+                "color": map-get($color-options, a),
+                "font-size": 2.18rem,
+                "font-weight": 600,
+            ),
+            $list-group-item-list-options: (
+                "first": (
+                    "color": map-get($color-options, a),
+                    "font-weight": 400,
+                    "className": g--btn-03 g--btn-03--third,
+                ),
+                "2": (
+                    "className": g--link-01 g--link-01--second,
+                ),
+            ),
+            $custom-options: (
+                ".g--card-23__wrapper__list-group > *:nth-child(2)": (
+                    background-color: transparent,
+                ),
+            )
+        );
+    }
+
+    &--fifth {
+        @include make-card-23-modifier(
+            $card-options: (
+                "align": center,
+            ),
+            $background-options: (
+                "background-color": map-get($color-options, m),
+            ),
+            $border-options: (
+                "border-radius": 900px,
+            ),
+            $media-options: (
+                "aspect-ratio": 3 4,
+                "object-fit": cover,
+                "object-position": center,
+            ),
+            $item-primary-options: (
+                "className": f--font-g,
+                "color": map-get($color-options, l),
+            ),
+            $item-secondary-options: (
+                "className": f--font-j,
+                "color": map-get($color-options, c),
+            ),
+            $list-group-item-options: (
+                "className": g--link-01 g--link-01--third,
+            ),
+            $custom-options: (
+                ".g--card-23__wrapper__list-group__item": (
+                    border-radius: 0px,
+                    background-color: transparent,
+                    border-color: transparent,
+                ),
+            )
+        );
+    }
+
+    &--sixth {
+        @include make-card-23-modifier(
+            $card-options: (
+                // "align": center,
+            ),
+            $background-options: (
+                "background-color": map-get($color-options, l),
+            ),
+            $border-options: (
+                "border-radius": 0,
+            ),
+            $media-options: (
+                "aspect-ratio": 3 2,
+                "object-fit": cover,
+                "object-position": center,
+                "background-color": map-get($color-options, l),
+            ),
+            $item-primary-options: (
+                "className": f--font-j,
+                "color": map-get($color-options, j),
+            ),
+            $item-secondary-options: (
+                "font-family": $type-b,
+                "font-size": 35px,
+                "font-weight": 600,
+                "color": map-get($color-options, a),
+            ),
+            $list-group-item-options: (
+                "className": g--btn-02 g--btn-02--second,
+                "color": map-get($color-options, j),
+                "font-weight": 700,
+            ),
+            $custom-options: (
+                ".g--card-23__wrapper__list-group__item": (
+                    border-radius: 0px,
+                    background-color: transparent,
+                    border-color: transparent,
+                    padding: 0,
+                ),
+                ".g--card-23__wrapper__list-group__item svg": (
+                    width: 5px,
+                ),
+            )
+        );
+    }
+
+    &--seventh {
+        @include make-card-23-modifier(
+            $card-options: (
+                // "align": center,
+            ),
+            $background-options: (
+                "background-color": map-get($color-options, c),
+            ),
+            $border-options: (
+                "border-radius": 30px,
+                "border-width": 5px,
+                "border-style": solid,
+                "border-color": map-get($color-options, a),
+            ),
+            $shadow-options: (
+                "box-shadow": 8px 8px 0px 1px map-get($color-options, a),
+            ),
+            $media-options: (
+                "aspect-ratio": 3 2,
+                "object-fit": cover,
+                "object-position": center,
+                "background-color": map-get($color-options, c),
+            ),
+            $item-primary-options: (
+                "className": f--font-h,
+                "color": map-get($color-options, a),
+            ),
+            $item-secondary-options: (
+                "className": f--font-e,
+                "font-weight": 500,
+                "color": map-get($color-options, a),
+            ),
+            $list-group-item-options: (
+                "className": g--btn-01 g--btn-01--fourth,
+                "color": map-get($color-options, a),
+                "font-weight": 700,
+            ),
+            $list-group-item-hover-options: (
+                "border-radius": 8px,
+                "background-color": map-get($color-options, l),
+                "box-shadow": 4px 3px 0px 0px map-get($color-options, a),
+            ),
+            $custom-options: (
+                ".g--card-23__wrapper__list-group__item": (
+                    border-radius: 16px,
+                    font-family: $type-a,
+                    font-size: 18px,
+                    background-color: map-get($color-options, l),
+                    border: 4px solid #000,
+                    box-shadow: 4px 3px 0px 0px map-get($color-options, a),
+                ),
+            )
+        );
+    }
+
+    &--eigth {
+        @include make-card-23-modifier(
+            $card-options: (
+                // "align": center,
+            ),
+            $background-options: (
+                "background-color": map-get($color-options, j),
+            ),
+            $border-options: (
+                "border-radius": 33px,
+            ),
+            $media-options: (
+                "aspect-ratio": 3 2,
+                "background-color": map-get($color-options, j),
+                "background-image":
+                    linear-gradient(180deg, #fcba58 0%, #e78f0b 19.54%, #95064b 99.12%),
+                "background-repeat": no-repeat,
+                "background-size": 100%,
+                "background-position": center,
+            ),
+            $item-primary-options: (
+                "className": f--font-j,
+                "color": map-get($color-options, c),
+            ),
+            $item-secondary-options: (
+                "className": f--font-g,
+                "font-family": $type-b,
+                "font-size": 35px,
+                "font-weight": 600,
+                "color": map-get($color-options, c),
+            ),
+            $list-group-item-options: (
+                "className": g--btn-01 g--btn-01--fifth,
+                "color": map-get($color-options, a),
+                "font-weight": 700,
+            ),
+            $list-group-item-hover-options: (
+                "border-radius": 12px,
+                "background-color": map-get($color-options, l),
+                "color": map-get($color-options, j),
+            ),
+            $custom-options: (
+                ".g--card-23__wrapper__list-group__item": (
+                    font-family: $type-e,
+                    font-size: 16px,
+                    background-color: map-get($color-options, l),
+                    color: map-get($color-options, j),
+                    box-shadow: none,
+                    border-width: 0,
+                ),
+            )
+        );
+    }
+
+    &--ninth {
+        @include make-card-23-modifier(
+            $card-options: (
+                "align": center,
+            ),
+            $background-options: (
+                "background-color": map-get($color-options, c),
+            ),
+            $border-options: (
+                "border-radius": 40px,
+            ),
+            $shadow-options: (
+                "box-shadow": 16px 16px 0px 0px map-get($color-options, n),
+            ),
+            $media-options: (
+                "aspect-ratio": 3 2,
+                "object-position": center,
+                "background-color": map-get($color-options, c),
+            ),
+            $item-primary-options: (
+                "className": f--font-g,
+                "color": map-get($color-options, n),
+            ),
+            $item-secondary-options: (
+                "className": f--font-j,
+                "color": map-get($color-options, n),
+            ),
+            $list-group-item-options: (
+                "className": g--btn-03 g--btn-03--second,
+                "color": map-get($color-options, n),
+                "font-weight": 700,
+                "font-family": $type-b,
+            ),
+            $custom-options: (
+                ".g--card-23__wrapper__list-group__item": (
+                    background-color: map-get($color-options, l),
+                    border: 1px solid map-get($color-options, n),
+                    border-radius: 12px,
+                    font-family: $type-b,
+                ),
+            )
+        );
+    }
+
+    &--tenth {
+        @include make-card-23-modifier(
+            $card-options: (
+                "align": center,
+            ),
+            $background-options: (
+                "background-color": map-get($color-options, a),
+            ),
+            $border-options: (
+                "border-radius": 0px,
+            ),
+            $media-options: (
+                "aspect-ratio": 3 2,
+                // "min-height": 100px,
+                "object-position": center,
+                "background-color": map-get($color-options, a),
+                "background-overlay": (
+                    "background-image":
+                        linear-gradient(180deg, rgba(15, 15, 15, 0) 50%, #0f0f0f 88.09%),
+                    // "background-repeat": no-repeat,
+                    // "background-size": 100%,
+                    // "background-position": bottom,,,,,,,,,,
+                ),
+            ),
+            $item-primary-options: (
+                "className": f--font-j,
+                "color": map-get($color-options, k),
+            ),
+            $item-secondary-options: (
+                "className": f--font-h,
+                "font-family": $type-c,
+                "font-size": 60px,
+                "line-height": 1.05,
+                "color": map-get($color-options, b),
+            ),
+            $list-group-item-options: (
+                "className": g--btn-03 g--btn-03--second,
+                "color": map-get($color-options, a),
+            ),
+            $custom-options: (
+                ".g--card-23__wrapper__list-group__item": (
+                    background-color: map-get($color-options, k),
+                ),
+            )
+        );
+    }
+}

@@ -1,0 +1,77 @@
+.c--wrapper-a {
+    @extend .f--background-a;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    &__bg-items {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 $measure * 7.5;
+
+        @media all and ($viewport-type: $tabletl) {
+            padding: 0 $measure * 5;
+        }
+
+        @media all and ($viewport-type: $tablets) {
+            padding: 0 $measure * 3;
+        }
+
+        @media all and ($viewport-type: $mobile) {
+            display: none;
+        }
+
+        &__media {
+            display: block;
+            max-width: $measure * 15;
+            max-height: 100%;
+        }
+    }
+
+    &__ft-items {
+        padding: $measure * 20 $measure * 30;
+        position: relative;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+
+        @media all and ($viewport-type: $tabletl) {
+            padding: $measure * 15 $measure * 20;
+        }
+
+        @media all and ($viewport-type: $tablets) {
+            padding: $measure * 10 $measure * 12;
+        }
+
+        @media all and ($viewport-type: $mobile) {
+            padding: $measure * 10 calc(2.5vw + 16px);
+        }
+    }
+
+    &--second & {
+        &__ft-items {
+            padding: $measure * 15 $measure * 30;
+
+            @media all and ($viewport-type: $tabletl) {
+                padding: $measure * 15 $measure * 20;
+            }
+
+            @media all and ($viewport-type: $tablets) {
+                padding: $measure * 10 $measure * 12;
+            }
+
+            @media all and ($viewport-type: $mobile) {
+                padding: $measure * 10 calc(2.5vw + 16px);
+            }
+        }
+    }
+}

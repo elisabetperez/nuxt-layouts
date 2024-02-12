@@ -1,0 +1,50 @@
+.c--marquee-a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: $measure * 9 0;
+
+    @media all and ($viewport-type: $tablets) {
+        padding: $measure * 5 0;
+    }
+
+    &__artwork {
+        display: block;
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-40%, -50%);
+        height: 100%;
+        width: 350px;
+        z-index: 1;
+
+        @media all and ($viewport-type: $tabletm) {
+            width: 280px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        position: relative;
+        flex-shrink: 0;
+        overflow: hidden;
+
+        &__title {
+            @extend .f--font-a;
+            color: map-get($color-options, c);
+            font-size: 180px;
+            line-height: 0.9;
+            padding: 0 $measure * 3;
+            position: relative;
+
+            @media all and ($viewport-type: $tablets) {
+                font-size: 100px;
+            }
+        }
+    }
+}

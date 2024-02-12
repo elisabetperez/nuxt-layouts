@@ -1,0 +1,377 @@
+.c--content-a {
+    @include make-content();
+    @include make-content-modifier(
+        $headings-options: (
+            "h2": (
+                "color": map-get($color-options, b),
+                //   "font-family": arial,
+                //   "font-size": 2rem,
+                //   "font-style": italic,
+                "font-weight": 700,
+                //   "letter-spacing": 1px,
+                //   "line-height": 1.5,
+                //   "max-lines": 3,
+                //   "text-decoration": underline,
+                //   "text-decoration-color": #000000,
+                //   "text-underline-position": under,
+                "className": f--font-c,
+                "margin-bottom": $measure * 4,
+                //   "margin-bottom-before-lists": 24px,
+                //   "padding-top": $measure * 5,
+                //   "text-align": center,
+                //   "bold-font-weight": 800,,,,,,,,,
+            ),
+            "h3": (
+                "color": map-get($color-options, b),
+                //   "font-family": arial,
+                //   "font-size": 2rem,
+                //   "font-style": italic,
+                "font-weight": 700,
+                //   "letter-spacing": 1px,
+                //   "line-height": 1.5,
+                //   "max-lines": 3,
+                //   "text-decoration": underline,
+                //   "text-decoration-color": #000000,
+                //   "text-underline-position": under,
+                "className": f--font-d,
+                "margin-bottom": $measure * 4,
+                //   "margin-bottom-before-lists": 24px,
+                "padding-top": $measure,
+                //   "text-align": center,
+                //   "bold-font-weight": 800,,,,,,,,,
+            ),
+            "h4": (
+                "color": map-get($color-options, b),
+                //   "font-family": arial,
+                //   "font-size": 2rem,
+                //   "font-style": italic,
+                "font-weight": 500,
+                //   "letter-spacing": 1px,
+                //   "line-height": 1.5,
+                //   "max-lines": 3,
+                //   "text-decoration": underline,
+                //   "text-decoration-color": #000000,
+                //   "text-underline-position": under,
+                "className": f--font-d,
+                "margin-bottom": $measure * 3,
+                //   "margin-bottom-before-lists": 24px,
+                "padding-top": $measure,
+                //   "text-align": center,
+                //   "bold-font-weight": 800,,,,,,,,,
+            ),
+            "h5": (
+                "color": map-get($color-options, b),
+                //   "font-family": arial,
+                //   "font-size": 2rem,
+                //   "font-style": italic,
+                "font-weight": 700,
+                //   "letter-spacing": 1px,
+                //   "line-height": 1.5,
+                //   "max-lines": 3,
+                //   "text-decoration": underline,
+                //   "text-decoration-color": #000000,
+                //   "text-underline-position": under,
+                "className": f--font-e,
+                "margin-bottom": $measure * 3,
+                //   "margin-bottom-before-lists": 24px,
+                "padding-top": $measure,
+                //   "text-align": center,
+                //   "bold-font-weight": 800,,,,,,,,,
+            ),
+            "h6": (
+                //   "color": #638c1d,
+                //   "font-family": arial,
+                //   "font-size": 2rem,
+                //   "font-style": italic,
+                //   "font-weight": 400,
+                //   "letter-spacing": 1px,
+                //   "line-height": 1.5,
+                //   "max-lines": 3,
+                //   "text-decoration": underline,
+                //   "text-decoration-color": #000000,
+                //   "text-underline-position": under,
+                //   "className": f--font-a,
+                // "margin-bottom": $measure,
+                //   "margin-bottom-before-lists": 24px,
+                // "padding-top": $measure * 5,
+                //   "text-align": center,
+                //   "bold-font-weight": 800,,,,,,,,,
+            ),
+        ),
+        $image-options: (
+            // "border-color": red,
+            "border-radius": 20px,
+            // "border-style": solid,
+            // "border-width": 2px,
+            "object-fit": cover,
+            // "max-height": 700px,
+            // "min-height": 0,
+            "object-position": center,
+            // "max-width": 100%,
+            // "min-width": 30px,
+            "margin-bottom": $measure * 3,
+            "caption": (
+                "color": map-get($color-options, b),
+                // "font-family": arial,
+                // "font-size": 2rem,
+                // "font-style": italic,
+                // "font-weight": 400,
+                // "letter-spacing": 1px,
+                // "line-height": 1.5,
+                // "max-lines": 3,
+                // "text-decoration": underline,
+                // "text-decoration-color": #000000,
+                // "text-underline-position": under,
+                "className": f--font-e,
+                // "margin-bottom": $measure*5,
+                // "margin-bottom-before-lists": 24px,
+                "padding-top": $measure * 2,
+                "text-align": right,
+                // "bold-font-weight": 800,
+            ),
+        ),
+        $link-options: (
+            "className": g--link-01 g--link-01--fifth,
+        ),
+        $lists-options: (
+            "first-number-width": $measure * 2,
+            "first-level-number-color": map-get($color-options, g),
+            "first-level-artwork-width": 6px,
+            "first-level-artwork-top": 10px,
+            // "first-level-artwork-image": '(../img/artwork.png)',
+            "first-level-artwork-background": map-get($color-options, g),
+            "first-level-artwork-border-radius": 100%,
+            // "first-level-artwork-border-width": 1px,
+            // "first-level-artwork-border-color": map-get($color-options, d),
+            "second-level-number-color": map-get($color-options, e),
+            "second-level-artwork-width": 6px,
+            // "second-level-artwork-top": 8px,
+            // "second-level-artwork-image": '(../img/artwork.png)',
+            "second-level-artwork-background": map-get($color-options, e),
+            // "second-level-artwork-border-radius": 50%,
+            // "second-level-artwork-border-width": 1px,
+            // "second-level-artwork-border-color": map-get($color-options, d),
+            // "third-level-artwork-width": 8px,
+            // "third-level-artwork-top": 8px,
+            // "third-level-artwork-image": '(../img/artwork.png)',
+            "third-level-number-color": map-get($color-options, i),
+            "third-level-artwork-background": map-get($color-options, i),
+            // "third-level-artwork-border-radius": 50%,
+            // "third-level-artwork-border-width": 1px,
+            // "third-level-artwork-border-color": map-get($color-options, d),
+            "margin-bottom": $measure * 4,
+            "font-styles": (
+                "color": map-get($color-options, b),
+                //   "font-family": arial,
+                //   "font-size": 2rem,
+                //   "font-style": italic,
+                //   "font-weight": 400,
+                //   "letter-spacing": 1px,
+                //   "line-height": 1.5,
+                //   "max-lines": 3,
+                //   "text-decoration": underline,
+                //   "text-decoration-color": #000000,
+                //   "text-underline-position": under,
+                "className": f--font-e,
+                "margin-bottom": $measure,
+                //   "margin-bottom-before-lists": 24px,
+                //   "padding-top": 8px,
+                //   "text-align": center,
+                //   "bold-font-weight": 800,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            ),
+        ),
+        $paragraphs-options: (
+            "color": map-get($color-options, b),
+            // "font-family": arial,
+            // "font-size": 2rem,
+            // "font-style": italic,
+            // "font-weight": 400,
+            // "letter-spacing": 1px,
+            // "line-height": 1.5,
+            // "max-lines": 3,
+            // "text-decoration": underline,
+            // "text-decoration-color": #000000,
+            // "text-underline-position": under,
+            "className": f--font-e,
+            "margin-bottom": $measure * 4,
+            "margin-bottom-before-lists": $measure * 4,
+            // "padding-top": 8px,
+            // "text-align": center,
+            "bold-font-weight": 700,
+        ),
+        $quote-options: (
+            "padding": $measure * 3 0,
+            "margin-top": $measure * 5,
+            "margin-bottom": $measure * 6,
+            // "border": (
+            //   "border-color": red,
+            //   "border-radius": 0,
+            //   "border-style": solid,
+            //   "border-width": 2px 0,
+            // ),
+            // "paragraph": (
+            //   "color": #638c1d,
+            //   "font-family": arial,
+            //   "font-size": 2rem,
+            //   "font-style": italic,
+            //   "font-weight": 400,
+            //   "letter-spacing": 1px,
+            //   "line-height": 1.5,
+            //   "max-lines": 3,
+            //   "text-decoration": underline,
+            //   "text-decoration-color": #000000,
+            //   "text-underline-position": under,
+            //   "className": f--font-a,
+            //   "margin-bottom": 32px,
+            //   "margin-bottom-before-lists": 24px,
+            //   "padding-top": 8px,
+            //   "text-align": center,
+            //   "bold-font-weight": 800,
+            // ),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+        )
+    );
+
+    & > .g--card-01 {
+        align-items: left;
+    }
+
+    & > .c--quote-a {
+        margin-top: $measure;
+        margin-bottom: $measure * 4;
+    }
+
+    & > .c--callout-a {
+        margin-top: $measure;
+        margin-bottom: $measure * 4;
+    }
+
+    & > .c--card-b {
+        margin-bottom: $measure * 4;
+    }
+
+    & > .c--cta-a {
+        margin-bottom: $measure * 4;
+    }
+
+    table {
+        border-radius: 20px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        border: none;
+        margin: 0;
+        margin-bottom: $measure * 4;
+        padding: 0px;
+        overflow: hidden;
+        text-align: left;
+        width: 100%;
+
+        thead,
+        tfoot,
+        thead,
+        tfoot {
+            border: none;
+            border: none;
+        }
+        td,
+        td {
+            margin: 0px;
+        }
+
+        thead tr {
+            @extend .f--background-a;
+        }
+
+        thead tr th {
+            @extend .f--font-e;
+            @extend .f--color-b;
+            font-weight: 700;
+            padding: $measure * 2;
+        }
+
+        table td {
+            @extend .f--font-e;
+            @extend .f--color-a;
+        }
+
+        tbody tr {
+            @extend .f--background-c;
+        }
+
+        tbody tr td {
+            padding: $measure * 2;
+        }
+
+        tbody tr:nth-child(odd) {
+            @extend .f--background-b;
+        }
+    }
+
+    .footnote {
+        @extend .f--font-e;
+        @extend .f--color-a;
+        margin-bottom: $measure * 2;
+    }
+
+    & > button {
+        @extend .g--btn-01;
+        @extend .g--btn-01--second;
+        margin-bottom: $measure * 4;
+    }
+
+    & > .c--tabs-a {
+        margin-bottom: $measure * 4;
+    }
+
+    & > h2:first-child,
+    & > h3:first-child,
+    & > h4:first-child,
+    & > h5:first-child,
+    & > h6:first-child,
+    & > p:first-child {
+        padding-top: 0;
+    }
+    *:last-child {
+        margin-bottom: 0;
+    }
+
+    & > .c--wrapper-b {
+        padding-top: $measure * 5 !important;
+    }
+
+    &--second {
+        @include make-content-modifier(
+            $headings-options: (
+                "h2": (
+                    "color": map-get($color-options, a),
+                ),
+                "h3": (
+                    "color": map-get($color-options, a),
+                ),
+                "h4": (
+                    "color": map-get($color-options, a),
+                ),
+                "h5": (
+                    "color": map-get($color-options, a),
+                ),
+                "h6": (),
+            ),
+            $image-options: (
+                "caption": (
+                    "color": map-get($color-options, a),
+                ),
+            ),
+            $link-options: (
+                "className": g--link-01 g--link-01--sixth,
+            ),
+            $lists-options: (
+                "font-styles": (
+                    "color": map-get($color-options, a),
+                ),
+            ),
+            $paragraphs-options: (
+                "color": map-get($color-options, a),
+            ),
+            $quote-options: ()
+        );
+    }
+}

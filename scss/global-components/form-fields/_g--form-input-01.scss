@@ -1,0 +1,42 @@
+.g--form-input-01 {
+    @include make-form-input-01();
+    @include make-form-input-01-modifier(
+        $background-options: (
+            "background-color": transparent,
+        ),
+        $background-autofill-options: (
+            "background-color": transparent,
+        ),
+        $border-options: (
+            "border-color": map-get($color-options, b),
+            "border-style": solid,
+            "border-width": 2px,
+            "border-radius": 90px,
+        ),
+        $font-options: (
+            "className": f--font-e,
+            "color": map-get($color-options, b),
+        ),
+        $error-options: (
+            "color": map-get($color-options, h),
+            "border-color": map-get($color-options, h),
+        ),
+        $placeholder-options: (
+            "color": rgba(map-get($color-options, b), 30%),
+        )
+    );
+
+    &--second {
+        @include make-form-input-01-modifier(
+            $border-options: (
+                "border-color": map-get($color-options, a),
+            ),
+            $font-options: (
+                "color": map-get($color-options, a),
+            ),
+            $placeholder-options: (
+                "color": rgba(map-get($color-options, a), 30%),
+            )
+        );
+    }
+}

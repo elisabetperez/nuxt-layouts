@@ -1,0 +1,53 @@
+.c--footer-a {
+    @extend .f--background-a;
+    padding: $measure * 10 0;
+
+    &__bd {
+        overflow: hidden;
+
+        &__media {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            height: auto;
+            max-width: none;
+            width: calc(100vw + #{$measure * 6});
+        }
+    }
+
+    &__ft {
+        margin-top: $measure * 6;
+
+        &__list-group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            row-gap: $measure;
+
+            &__item {
+                display: flex;
+
+                &__content {
+                    display: inline-block;
+                    @extend .f--font-e;
+                    @extend .f--color-b;
+                }
+
+                &:not(:last-child) {
+                    &::after {
+                        content: "|";
+                        @extend .f--font-e;
+                        @extend .f--color-b;
+                        display: inline-block;
+                        margin: 0 $measure * 2;
+
+                        @media all and ($viewport-type: $tabletm) {
+                            margin: 0 $measure;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

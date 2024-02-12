@@ -1,0 +1,38 @@
+.g--card-01 {
+    @include make-card-01();
+    @include make-card-01-modifier(
+        $card-options: (
+            "align": left,
+            "back-items": no,
+        ),
+        $background-options: (
+            "background-color": map-get($color-options, e),
+        ),
+        $border-options: (
+            "border-radius": 30px,
+        ),
+        $media-options: (
+            "aspect-ratio": 1 1,
+            "width": 137px,
+            "height": auto,
+            "object-fit": contain,
+            "object-position": center,
+            "first": yes,
+        ),
+        $item-primary-options: (
+            "color": map-get($color-options, d),
+            "className": f--font-c,
+        )
+    );
+
+    &--second {
+        @include make-card-01-modifier(
+            $media-options: (
+                "width": 100%,
+            ),
+            // $item-primary-options: (
+            //     "font-size": 3.75rem,
+            // )
+        );
+    }
+}

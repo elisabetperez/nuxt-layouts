@@ -1,0 +1,147 @@
+.g--btn-03 {
+    @include make-btn-03();
+    @include make-btn-03-modifier(
+        $background-options: (
+            "background-color": map-get($color-options, a),
+        ),
+        $border-options: (
+            "border-radius": 30px,
+        ),
+        $hover-options: (
+            "border-radius": $measure,
+        ),
+        $font-options: (
+            "className": (
+                f--font-e,
+                f--color-b,
+            ),
+        ),
+        $artwork-options: (
+            "width": $measure * 3,
+        )
+    );
+
+    &--second {
+        @include make-btn-03-modifier(
+            $background-options: (
+                "background-color": map-get($color-options, k),
+            ),
+            $font-options: (
+                "className": (
+                    f--font-j,
+                    f--color-n,
+                ),
+            ),
+            $artwork-options: (
+                "width": $measure * 2,
+            )
+        );
+    }
+
+    &--third {
+        @include make-btn-03-modifier(
+            $background-options: (
+                "background-color": map-get($color-options, k),
+            ),
+            $shadow-options: (
+                "box-shadow": 4px 3px 0px 0px map-get($color-options, a),
+            ),
+            $border-options: (
+                "border-radius": 10px,
+                "border-width": 4px,
+                "border-style": solid,
+                "border-color": map-get($color-options, a),
+            ),
+            $hover-options: (
+                "box-shadow": none,
+            ),
+            $font-options: (
+                "className": (
+                    f--font-d,
+                    f--color-a,
+                ),
+            ),
+            $artwork-options: (
+                "width": $measure * 3,
+            )
+        );
+    }
+
+    &--fourth {
+        @include make-btn-03-modifier(
+            $background-options: (
+                "background-color": map-get($color-options, b),
+            ),
+            $font-options: (
+                "className": (
+                    f--font-e,
+                ),
+                "color": map-get($color-options, a),
+                "font-weight": 700,
+            )
+        );
+    }
+
+    &--example-1 {
+        @include make-btn-03-modifier(
+            $background-options: (
+                "background-color": #e7f07e,
+            ),
+            $shadow-options: (
+                "box-shadow": 4px 3px 0px 0px #000,
+            ),
+            $border-options: (
+                "border-radius": 10px,
+                "border-width": 4px,
+                "border-style": solid,
+                "border-color": #000,
+            ),
+            $hover-options: (
+                "box-shadow": none,
+            ),
+            $font-options: (
+                "className": (
+                    f--font-d,
+                    f--color-a,
+                ),
+                "color": map-get($color-options, a),
+            ),
+            $artwork-options: (
+                "width": $measure * 2,
+                "stroke": map-get($color-options, a),
+            )
+        );
+    }
+
+    &--example-2 {
+        @include make-btn-03-modifier(
+            $shadow-options: (
+                "box-shadow": none,
+            ),
+            $background-options: (
+                "background-color": #353052,
+            ),
+            $artwork-options: (
+                "width": 16px,
+                "stroke": map-get($color-options, b),
+                // "first": yes,
+            ),
+            $border-options: (
+                "border-radius": 0px,
+                "border-color": transparent,
+                "border-width": 1px,
+            ),
+            $font-options: (
+                "color": map-get($color-options, b),
+                "font-weight": 400,
+            ),
+            $hover-options: (
+                "background-color": transparent,
+                "border-color": #353052,
+                "color": #353052,
+                "icon-transform": translate($measure, -$measure),
+                "stroke": #353052,
+            )
+        );
+    }
+}

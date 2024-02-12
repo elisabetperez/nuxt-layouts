@@ -1,0 +1,35 @@
+.g--form-radio-01 {
+    @include make-form-radio-01();
+    @include make-form-radio-01-modifier(
+        $artwork-options: (
+            "background-color": map-get($color-options, g),
+            // "width": 13px,
+        ),
+        $circle-options: (
+            "border-style": solid,
+            "border-width": 2px,
+            "border-color": map-get($color-options, b),
+            "width": 25px,
+        ),
+        $error-options: (
+            "border-color": map-get($color-options, h),
+            "color": map-get($color-options, h),
+        ),
+        $font-options: (
+            "className": f--font-e,
+            "color": map-get($color-options, b),
+        ),
+        $custom-options: ()
+    );
+
+    &--second {
+        @include make-form-radio-01-modifier(
+            $circle-options: (
+                "border-color": map-get($color-options, a),
+            ),
+            $font-options: (
+                "color": map-get($color-options, a),
+            )
+        );
+    }
+}

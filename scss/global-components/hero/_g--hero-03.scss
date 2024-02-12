@@ -1,0 +1,22 @@
+.g--hero-03 {
+    @include make-hero-03();
+    @include make-hero-03-modifier(
+        $hero-options: (
+            // "align": center,
+            "back-items": yes,
+            "breakpoint-bigger-columns": $tabletl,
+            "breakpoint-full-width": $mobile,
+            // "min-height": 700px
+        ),
+        $background-options: (
+            "background-color": map-get($color-options, a),
+            "background-repeat": no-repeat,
+            "background-size": 40% auto,
+            "background-position": right bottom,
+        ),
+        $item-primary-options: (
+            "className": f--font-b f--color-b,
+            "font-weight": 700,
+        )
+    );
+}

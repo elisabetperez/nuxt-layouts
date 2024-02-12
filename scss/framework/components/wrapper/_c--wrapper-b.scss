@@ -1,0 +1,9 @@
+.c--wrapper-b {
+    @extend .f--background-c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $measure * 5 !important;
+    position: relative;
+    width: 100%;
+}

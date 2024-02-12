@@ -1,0 +1,64 @@
+.c--join-beta-a {
+    @extend .f--background-a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    &__wrapper {
+        @extend .f--container;
+
+        &__content {
+            margin: 0 auto;
+            padding: $measure * 15 0;
+            width: 66.6667%;
+
+            @media all and ($viewport-type: $tablets) {
+                padding: $measure * 10 0;
+            }
+
+            &__media-wrapper {
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: $measure * 4;
+                overflow: hidden;
+                height: 95px;
+                width: 95px;
+
+                &__media {
+                    aspect-ratio: 1;
+                    display: block;
+                    height: 95px;
+                    width: 95px;
+                }
+            }
+
+            &__title {
+                @extend .f--font-b;
+                @extend .f--color-b;
+                font-weight: 700;
+                margin-bottom: $measure * 4;
+            }
+
+            &__subtitle {
+                @extend .f--font-d;
+                @extend .f--color-b;
+                font-weight: 700;
+                margin-bottom: $g-measure * 4;
+            }
+
+            &__tagline {
+                @extend .f--font-d;
+                @extend .f--color-b;
+                font-weight: 700;
+                margin-bottom: $g-measure * 4;
+            }
+
+            &__btn {
+                @extend .g--btn-01;
+            }
+        }
+    }
+}

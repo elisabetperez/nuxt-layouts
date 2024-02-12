@@ -1,0 +1,20 @@
+.c--wrapper-d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: $measure * 5;
+    text-align: center;
+
+    &__title {
+        @extend .f--font-c;
+        @extend .f--color-b;
+        font-weight: 700;
+    }
+
+    &__content {
+        @extend .f--font-d;
+        @extend .f--color-b;
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,73 @@
+.c--card-b {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+
+    @media all and ($viewport-type: $tablets) {
+        flex-wrap: wrap;
+        gap: $measure * 3;
+    }
+
+    &__left-items {
+        width: 100%;
+        max-width: 250px;
+
+        @media all and ($viewport-type: $tablets) {
+            max-width: 100%;
+        }
+
+        &__media {
+            border-radius: 100px;
+            display: block;
+            overflow: hidden;
+            object-fit: cover;
+            object-position: center;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__right-items {
+        width: 100%;
+        padding: $measure * 6 $measure * 5;
+
+        @media all and ($viewport-type: $tablets) {
+            padding: $measure * 2;
+        }
+
+        &__hd {
+            display: flex;
+            gap: $measure;
+            margin-bottom: $measure * 3;
+
+            &__item {
+                @extend .f--font-e;
+                @extend .f--color-a;
+            }
+        }
+
+        &__bd {
+            margin-bottom: $measure;
+
+            &__content {
+                @extend .f--font-e;
+                @extend .f--color-a;
+                font-weight: 700;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                -webkit-line-clamp: 3;
+            }
+        }
+
+        &__ft {
+            display: flex;
+
+            &__item {
+                @extend .f--font-e;
+                color: rgba(map-get($color-options, a), 60%);
+            }
+        }
+    }
+}

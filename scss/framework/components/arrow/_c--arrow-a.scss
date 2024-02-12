@@ -1,0 +1,15 @@
+.c--arrow-a {
+    // display: block;
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    max-width: 270px;
+
+    &__media {
+        display: block;
+        object-fit: contain;
+        object-position: center;
+        height: 100%;
+        width: 100%;
+    }
+}

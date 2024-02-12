@@ -1,0 +1,21 @@
+.g--accordion-02 {
+    @include make-accordion-02();
+    @include make-accordion-02-modifier(
+        $border-options: (
+            "border-width": 0 0 2px 0,
+            "border-style": solid,
+            "border-color": map-get($color-options, f),
+        ),
+        $item-primary-options: (
+            "className": (
+                f--font-d,
+                f--color-a,
+            ),
+            "font-weight": 700,
+        ),
+        $icon-options: (
+            "width": $measure * 2,
+            "fill": map-get($color-options, f),
+        )
+    );
+}

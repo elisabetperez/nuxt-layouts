@@ -1,0 +1,35 @@
+.g--404-01 {
+    @include make-404-01();
+    @include make-404-01-modifier(
+        $error-404-options: (
+            "align": center,
+            // "min-height": 100vh,
+            // "top-extra-space": 30px,
+            // "breakpoint-bigger-columns": 1000px,
+            // "breakpoint-full-width": 500px,,,
+        ),
+        $background-options: (
+            "background-class": f--background-a,
+        ),
+        $item-primary-options: (
+            "color": map-get($color-options, b),
+            "className": f--font-a,
+            "font-weight": 700,
+        ),
+        $item-secondary-options: (
+            "color": map-get($color-options, b),
+            "className": f--font-d,
+            "font-weight": 700,
+        ),
+        $list-group-item-options: (
+            "className": g--btn-01,
+        ),
+        $media-options: (
+            "aspect-ratio": 1 1,
+            "object-fit": contain,
+            "height": 95px,
+            "object-position": center,
+            "width": 95px,
+        )
+    );
+}

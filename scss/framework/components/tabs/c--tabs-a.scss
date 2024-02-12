@@ -1,0 +1,95 @@
+.c--tabs-a {
+    /* Start Header Style */
+    &__hd {
+        &__title {
+            @extend .f--font-e;
+            @extend .f--color-a;
+            font-weight: 900;
+            margin-bottom: $measure * 2;
+
+            &__link {
+                @extend .g--link-01;
+                @extend .g--link-01--second;
+                font-weight: 700;
+            }
+        }
+
+        &__list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: $measure * 2;
+            position: relative;
+            bottom: -1px;
+            padding-bottom: $measure * 2;
+
+            &__list-item {
+                display: flex;
+                align-items: stretch;
+                width: auto;
+
+                &__link {
+                    @extend .g--pill-01;
+                    position: relative;
+                    transition: all $time-b $ease-standard-a;
+                    width: fit-content;
+
+                    &--is-active {
+                        @extend .g--pill-01--is-active;
+                    }
+                }
+
+                &:nth-child(2) & {
+                    &__link {
+                        @extend .g--pill-01--second;
+                    }
+                }
+
+                &:nth-child(3) & {
+                    &__link {
+                        @extend .g--pill-01--third;
+                    }
+                }
+            }
+        }
+    }
+
+    /* End Header Style */
+    /* Start Body Style*/
+    &__bd {
+        width: 100%;
+
+        &__item {
+            display: flex;
+            /* this should not be changed if possible*/
+            overflow: hidden;
+            max-height: 0;
+
+            &--is-active {
+                max-height: 99rem;
+                opacity: 1;
+            }
+
+            &__left-items {
+                display: flex;
+                flex-direction: column;
+                row-gap: $measure * 4;
+            }
+
+            &__right-items {
+                height: 100%;
+                @media all and ($viewport-type: $tabletm) {
+                    margin-top: $measure * 4;
+                }
+            }
+        }
+
+        &__media {
+            @extend .f--ar;
+            display: block;
+            width: 100%;
+        }
+    }
+}

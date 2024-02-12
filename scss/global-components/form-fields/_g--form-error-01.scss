@@ -1,0 +1,12 @@
+.g--form-error-01 {
+    @include make-form-error-01();
+    @include make-form-error-01-modifier(
+        $font-options: (
+            "color": map-get($color-options, h),
+            "className": f--font-e,
+        ),
+        $position-options: (
+            "position": relative,
+        )
+    );
+}

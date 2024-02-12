@@ -1,0 +1,69 @@
+.g--pill-01 {
+    @include make-pill-01();
+    @include make-pill-01-modifier(
+        $background-options: (
+            "background-color": transparent,
+        ),
+        $border-options: (
+            "border-color": rgba(map-get($color-options, e), 0.2),
+            "border-width": 3px,
+            "border-style": solid,
+            "border-radius": 100px,
+        ),
+        $font-options: (
+            "className": (
+                f--font-e,
+                f--color-a,
+            ),
+        )
+    );
+
+    &--is-active {
+        @include make-pill-01-modifier(
+            $border-options: (
+                "border-color": map-get($color-options, d),
+            ),
+            $font-options: (
+                "font-weight": 700,
+            )
+        );
+    }
+
+    &--second {
+        @include make-pill-01-modifier(
+            $border-options: (
+                "border-color": rgba(map-get($color-options, g), 0.2),
+            )
+        );
+    }
+
+    &--second.g--pill-01--is-active {
+        @include make-pill-01-modifier(
+            $border-options: (
+                "border-color": map-get($color-options, g),
+            ),
+            $font-options: (
+                "font-weight": 700,
+            )
+        );
+    }
+
+    &--third {
+        @include make-pill-01-modifier(
+            $border-options: (
+                "border-color": rgba(map-get($color-options, f), 0.2),
+            )
+        );
+    }
+
+    &--third.g--pill-01--is-active {
+        @include make-pill-01-modifier(
+            $border-options: (
+                "border-color": map-get($color-options, f),
+            ),
+            $font-options: (
+                "font-weight": 700,
+            )
+        );
+    }
+}

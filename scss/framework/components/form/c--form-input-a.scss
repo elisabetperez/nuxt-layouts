@@ -1,0 +1,22 @@
+.c--form-input-a {
+    &__item{
+        background-color: transparent !important;
+        display: block;
+        border-radius: 4px;
+        border: 1px solid #efefef;
+        color: #000;
+        padding: $measure*.5 $measure;
+        width:100%;
+        transition: border-color $time-b $ease-standard-a;
+        margin-bottom: $measure * 2;
+
+        &::placeholder{
+          color: rgba(#000, 0.6);
+        }
+    }
+    &--error {
+      input { 
+        border: 1px solid red;
+      }
+    }
+}

@@ -1,0 +1,54 @@
+//* GLOBAL VARIABLES
+$g-viewport-type: max-width;
+$g-measure: 0.5rem;
+$g-container-class: f--container;
+$g-row-class: f--row;
+$g-row-remove-gutter-class: f--row--remove-gutter;
+$g-transition-duration: 0.3s;
+$g-transition-timing-function: cubic-bezier(0.2, 0, 0.38, 0.9);
+
+//* accordion
+$accordion-padding: $g-measure * 4 $g-measure * 2 $g-measure * 3;
+
+//* btn
+$btn-padding: $g-measure $g-measure * 3;
+$btn-icon-gap: $g-measure;
+$btn-full-width-breakpoint: 580px;
+
+//* card
+$card-spaces-breakpoint: 810px;
+$card-item-list-gap: $g-measure;
+$card-media-text-space: $g-measure * 2;
+$card-media-text-space-responsive: $g-measure;
+
+//* CTA
+$cta-item-list-gap: $g-measure $g-measure * 2;
+$cta-outside-container-col-class: (f--col-9 f--col-desktop-8);
+$cta-spaces-breakpoint: 810px;
+$cta-inside-container-padding: $g-measure * 15 $g-measure * 10;
+$cta-inside-container-padding-responsive: $g-measure * 10 $g-measure * 7;
+$cta-outside-container-padding-y: $g-measure * 20;
+$cta-outside-container-padding-y-responsive: $g-measure * 10;
+
+//* form fields
+$form-margin-bottom: $g-measure * 3;
+$input-padding: $g-measure * 0.5 $g-measure;
+$file-btn-padding: $g-measure * 0.5 $g-measure * 3;
+
+//* icon
+$icon-padding: $measure * 1.5;
+
+//* layout
+$layout-spaces-breakpoint: 810px;
+$layout-item-list-gap: $g-measure $g-measure * 2;
+
+//* hero
+$hero-spaces-breakpoint: 810px;
+$hero-item-list-gap: $g-measure $g-measure * 2;
+
+//* pill
+$pill-padding: $g-measure $g-measure * 2;
+
+//* 404
+$error-404-spaces-breakpoint: 810px;
+$error-404-item-list-gap: $g-measure $g-measure * 2;

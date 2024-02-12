@@ -1,0 +1,81 @@
+.c--code-a {
+    @extend .f--background-a;
+    border-radius: 10px;
+    padding: 0 0 0 $measure * 2;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    &__btn {
+        @extend .g--btn-01;
+        @extend .g--btn-01--second;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        padding: 5px !important;
+        position: absolute;
+        top: $measure * 2;
+        right: $measure * 2;
+        height: $measure * 6 !important;
+        width: $measure * 6 !important;
+
+        svg {
+            display: block;
+            height: 21px !important;
+            width: 21px !important;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        overflow: auto;
+        max-height: 330px;
+        min-height: 80px;
+
+        &::-webkit-scrollbar {
+            padding-right: $measure * 2;
+            height: 4px;
+            width: 4px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: rgba(map-get($color-options, b), 10%);
+            border-radius: 90px;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: map-get($color-options, g);
+            border-radius: 90px;
+        }
+
+        &__label {
+            @extend .f--font-f;
+            @extend .f--color-g;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-right: 1px solid map-get($color-options, g);
+            padding-top: $measure * 2;
+            padding-right: $measure * 3;
+            position: sticky;
+            top: 16px;
+        }
+
+        &__content {
+            @extend .f--font-k;
+            @extend .f--color-b;
+            // padding-left: $measure * 3;
+            padding: $measure * 2 0 $measure * 2 $measure * 3;
+        }
+    }
+
+    &--second & {
+        &__wrapper {
+            &__label {
+                color: map-get($color-options, f);
+                border-right: 1px solid map-get($color-options, f);
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.c--modal-a {
+    background: map-get($color-options, a);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 27px);
+    transform: translateX(-50%);
+    visibility: hidden;
+    max-width: 90vw;
+    width: 600px;
+    z-index: 1000;
+
+    @media all and ($viewport-type: $mobile) {
+        left: calc(50% - 5vw);
+        transform: translateX(calc(-50% + 16vw));
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border: 11.5px solid transparent;
+        border-bottom: 0;
+        border-top: 13.5px solid map-get($color-options, a);
+    }
+
+    @media all and ($viewport-type: $tablets) {
+        padding: $measure * 4;
+    }
+
+    &__btn {
+        position: absolute;
+        right: $measure * 2;
+        top: $measure * 2;
+
+        &__icon {
+            height: $measure * 2;
+            width: $measure * 2;
+        }
+    }
+
+    &__wrapper {
+        max-height: 330px;
+        overflow: auto;
+        width: 100%;
+
+        &::-webkit-scrollbar {
+            padding-right: $measure * 2;
+            height: 4px;
+            width: 4px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: rgba(map-get($color-options, b), 10%);
+            border-radius: 90px;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: map-get($color-options, g);
+            border-radius: 90px;
+        }
+    }
+
+    &--is-active {
+        opacity: 1;
+        visibility: visible;
+    }
+}

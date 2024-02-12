@@ -1,0 +1,1 @@
+import{c as e,o as t}from"./entry.OtO-Wuic.js";const n={__name:"join-beta",setup(E){return(o,a)=>(t(),e("div",null," THIS IS THE PAGE WHERE YOU A REDIRECT WHEN YOU DONT ACCESS TO SOME PAGES "))}};export{n as default};
