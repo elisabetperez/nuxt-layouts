@@ -23,7 +23,6 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../plugins/form").default> &
   InjectionType<typeof import("../../plugins/lottie-player.client").default> &
   InjectionType<typeof import("../../plugins/scrollActive").default> &
-  InjectionType<typeof import("../../plugins/timage").default> &
   InjectionType<typeof import("../../plugins/tiny-slider.client").default>
 
 declare module '#app' {

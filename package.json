@@ -27,7 +27,6 @@
     "@terra-hq/gc": "file:terra-hq-gc-0.0.3.tgz",
     "@terra-hq/wysiwyg": "file:terra-hq-wysiwyg-0.0.1.tgz",
     "@terrahq/collapsify": "^0.0.18",
-    "@terrahq/timage": "^0.0.6",
     "@terrahq/vue-form": "^0.0.17",
     "blazy": "^1.8.2",
     "gsap": "file:gsap-bonus.tgz",
