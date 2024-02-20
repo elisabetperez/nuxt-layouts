@@ -35,7 +35,6 @@
 </template>
 <script setup>
 definePageMeta({
-  middleware: ["authenticated"],
   layout: "sidenav",
 });
 

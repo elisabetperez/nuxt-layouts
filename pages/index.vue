@@ -37,7 +37,6 @@
 
 
 definePageMeta({
-    middleware: ["authenticated"],
     layout: "full",
 })
 </script>

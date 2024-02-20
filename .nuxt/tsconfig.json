@@ -77,9 +77,6 @@
       "#build/*": [
         "./*"
       ],
-      "#sanity-client": [
-        "../node_modules/@nuxtjs/sanity/dist/runtime/client"
-      ],
       "#components": [
         "./components"
       ]
@@ -88,16 +85,12 @@
   "include": [
     "./nuxt.d.ts",
     "../**/*",
-    "../node_modules/@nuxtjs/supabase/runtime",
-    "../node_modules/@nuxtjs/sanity/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
     ".."
   ],
   "exclude": [
     "../node_modules",
     "../node_modules/nuxt/node_modules",
-    "../node_modules/@nuxtjs/supabase/runtime/server",
-    "../node_modules/@nuxtjs/sanity/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "../dist",
     "../.output"

@@ -4,10 +4,6 @@ import path from 'path';
 
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: [
-    '@nuxtjs/supabase',
-    '@nuxtjs/sanity'
-  ],
   sanity: {
     projectId: 'ihhks8v0',
     dataset: process.env.SECRET_DATASET,
@@ -16,12 +12,6 @@ export default defineNuxtConfig({
   css: [
     "./assets/style.scss", // this is a default file
   ],
-  supabase: {
-    // Options
-    url:process.env.SUPABASE_URL,
-    key:process.env.SUPABASE_ANON_KEY,
-    redirect: false,
-  },
   app: {
     layoutTransition: { name: 'layout', mode: 'out-in' }
   },
@@ -33,7 +23,6 @@ export default defineNuxtConfig({
         '@utilities': path.resolve(__dirname, './utilities'),
       },
     },
-    
     css: {
       // same setup as Astro since it uses Astro
       preprocessorOptions: {

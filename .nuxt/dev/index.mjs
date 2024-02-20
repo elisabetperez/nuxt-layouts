@@ -61,47 +61,7 @@ const _inlineRuntimeConfig = {
       }
     }
   },
-  "public": {
-    "supabase": {
-      "url": "https://yknzbigmdfrezuwvvnjf.supabase.co",
-      "key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlrbnpiaWdtZGZyZXp1d3Z2bmpmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDAxNzg5MDYsImV4cCI6MjAxNTc1NDkwNn0.kO3dQ0Yk2biA86LX6s5Ezoc9dGot6UVqJ6BDL1wq-fI",
-      "redirect": false,
-      "redirectOptions": {
-        "login": "/login",
-        "callback": "/confirm",
-        "exclude": [],
-        "cookieRedirect": false
-      },
-      "cookieName": "sb",
-      "cookieOptions": {
-        "maxAge": 28800,
-        "sameSite": "lax",
-        "secure": true
-      },
-      "clientOptions": {
-        "auth": {
-          "flowType": "pkce",
-          "detectSessionInUrl": true,
-          "persistSession": true,
-          "autoRefreshToken": true
-        }
-      }
-    },
-    "sanity": {
-      "useCdn": false,
-      "projectId": "ihhks8v0",
-      "dataset": "production",
-      "apiVersion": "2021-03-25",
-      "withCredentials": false,
-      "token": "",
-      "perspective": "raw",
-      "additionalClients": {}
-    }
-  },
-  "supabase": {
-    "serviceKey": ""
-  },
-  "sanity": {}
+  "public": {}
 };
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _inlineRuntimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";

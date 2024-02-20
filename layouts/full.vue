@@ -7,8 +7,6 @@
 </template>
 
 <script setup>
-const user = useSupabaseUser();
-
 </script>
 <style scoped>
 body {
